@@ -7,7 +7,7 @@
 
 ```
 $ echo "MeCabは 京都大学情報学研究科−日本電信電話株式会社コミュニケーション科学基礎研究所 共同研究ユニットプロジェクトを通じて開発されたオープンソース 形態素解析エンジンです。" \
- | docker run -i -a STDIN -a STDOUT smizy/mecab:0.996-alpine 
+ | docker run --rm -i -a STDIN -a STDOUT smizy/mecab:0.996-alpine 
 MeCab	名詞,固有名詞,一般,*,*,*,MeCab,メカブ,メカブ
 は	助詞,係助詞,*,*,*,*,は,ハ,ワ
 京都大	名詞,固有名詞,組織,*,*,*,京都大,キョウトダイ,キョートダイ
