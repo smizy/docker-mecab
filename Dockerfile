@@ -20,7 +20,7 @@ RUN set -x \
         git \
         openssl \
         sudo \
-    && CPUCOUNT=$(cat /proc/cpuinfo | grep '^processor.*:' | wc -l)  \
+    && CPUCOUNT=$(getconf _NPROCESSORS_ONLN)  \
     # Install MeCab
     && wget -q -O - ${mecab_url} \
         | tar -xzf - -C /tmp \
