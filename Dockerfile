@@ -1,5 +1,6 @@
-FROM alpine:3.4
-MAINTAINER smizy
+FROM alpine:3.8
+
+LABEL maintainer="smizy"
 
 ENV MECAB_VERSION   0.996
 ENV IPADIC_VERSION  2.7.0-20070801
